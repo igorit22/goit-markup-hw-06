@@ -1,5 +1,5 @@
-# goit-markup-hw-04
-HTML+CSS Homework #4
+# goit-markup-hw-06
+HTML+CSS Homework #6
 
 Слова, часто используемые в CSS-классах
 https://github.com/yoksel/common-words
