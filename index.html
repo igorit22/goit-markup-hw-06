@@ -287,7 +287,7 @@
         <div class="footer-form">
           <p class="footer-subscribe-title">Subscribe</p>
           <form class="footer-subscribe-form">
-            <input type="text" class="footer-subscribe-input" name="user-email" placeholder="Email" required>
+            <input type="email" class="footer-subscribe-input" name="user-email" placeholder="Email" required>
             <button type="submit" class="footer-subscribe-btn">Subscribe<svg class="footer-subscribe-icon" width="24" height="20">
               <use href="./images/icons.svg#icon-send"></use>
             </svg></button>
@@ -295,6 +295,9 @@
         </div>
       </div>
     </footer>
+
+<!------------------ Site modal ----------->
+
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-close" data-modal-close type="button"><svg class="customers-icon" width="8" height="8">
@@ -302,17 +305,33 @@
         </svg></button>
         <p class="modal-title">Leave your contacts and we will call you back</p>
         <form class="modal-form">
-          <label for="user-name" class="modal-label">Name*</label>
-          <input type="text" class="modal-input" name="user-name" placeholder="Ігор"  id="user-name" minlength="2" required>
+          <div class="modal-input-field">
+          <div class="modal-field"><label for="user_name" class="modal-label">Name</label>
+            <div class="modal-wrap"><input type="text" class="modal-input" name="user-name" placeholder=""  id="user_name" minlength="2" pattern="^[a-zA-Zа-яА-ЯіІїЇЄє]+$" required>
           <svg class="modal-input-icon" width="18" height="18">
             <use href="./images/icons.svg#icon-person"></use>
-          </svg>
-          <label for="user-phone" class="modal-label">Phone*</label>
-          <input type="tel" class="modal-input" name="user-phone" placeholder="+38(050)111-11-11"  id="user-phone" required>
-          <label for="user_email" class="modal-label">Email</label>
-          <input type="email" class="modal-input" name="user-email" id="user_email" placeholder="webstudio@com.ua">
-          <label for="user-comment" class="modal-label">Comment</label>
-          <input type="text" class="modal-input" name="user-comment" id="user-comment" placeholder="Text input">
+          </svg></div>
+          </div>
+          
+          <div class="modal-field"><label for="user_phone" class="modal-label">Phone</label>
+            <div class="modal-wrap"><input type="tel" class="modal-input" name="user-phone" placeholder=""  id="user_phone" minlength="10" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="xxx-xxx-xx-xx" required><svg class="modal-input-icon" width="18" height="18">
+            <use href="./images/icons.svg#icon-phone"></use>
+          </svg></div>
+          </div>
+          
+          <div class="modal-field"><label for="user_email" class="modal-label">Email</label>
+            <div class="modal-wrap"><input type="email" class="modal-input" name="user-email" id="user_email" placeholder=""><svg class="modal-input-icon" width="18" height="18"><use href="./images/icons.svg#icon-email"></use></svg></div>          
+          </div>
+          
+          <div class="modal-field"><label for="user_comment" class="modal-label">Comment</label>
+            <textarea name="user-comment" class="modal-textarea" id="user_comment" placeholder="Text input"></textarea>
+            </div>
+
+            </div>
+            <div class="modal-checkbox-field">
+              <input type="checkbox" class="modal-checkbox visually-hidden" name="user-checkbox" id="user_checkbox" value="true" required>
+              <label for="user_checkbox" class="modal-label-checkbox"><span><svg class="checkbox-icon-click" width="10" height="8"><use href="./images/icons.svg#icon-click"></use></svg></span>I accept the terms and conditions of the&nbsp;<a href="#" class="modal-privacy-policy">Privacy Policy</a></label>         
+            </div>
           <button type="submit" class="modal-btn">Send</button>
         </form>
       </div>
