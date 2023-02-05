@@ -721,12 +721,13 @@ address {
   fill: var(--accent-sait-color);
 }
 
-.modal-input:not(:focus):not(:placeholder-shown):valid {
+/* .modal-input:not(:focus):not(:placeholder-shown):valid {
   background-color: rgb(176, 251, 176);
 }
 .modal-input:not(:focus):not(:placeholder-shown):invalid {
   background-color: rgb(250, 182, 182);
-}
+} */
+
 .modal-btn {
   margin: 0 auto;
   display: block; 
