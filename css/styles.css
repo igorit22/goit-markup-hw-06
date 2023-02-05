@@ -864,8 +864,12 @@ address {
   fill: #F4F4FD;
 }
 
-.modal-checkbox:focus + .modal-label-checkbox span {
+/* .modal-checkbox:focus + .modal-label-checkbox span {
   border-color: var(--accent-sait-color);
+} */
+
+.modal-checkbox:focus + .modal-label-checkbox span {
+  border: 2px solid var(--accent-sait-color);
 }
 
 
